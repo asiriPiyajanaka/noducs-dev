@@ -7,19 +7,10 @@ function App() {
     <>
       <div className="max-h-screen flex h-screen w-screen">
         <div className="flex flex-col w-full">
-          <div className="flex justify-between">
-            <div className="flex items-center justify-start p-6">
-              <p>noducs v1.0.0</p>
-            </div>
-
-            <div className="flex items-center justify-start p-6 underline">
-              <p>Documentation</p>
-            </div>
-          </div>
-          <div className="flex justify-center items-center h-full relative bottom-20">
+          <div className="flex justify-between"></div>
+          <div className="flex justify-center items-center h-full relative w-full bottom-20">
             <div className="flex justify-center flex-col items-center">
               <img
-                // src="https://wtemrwnjzqbbmgxpxrvf.supabase.co/storage/v1/object/public/cat_designs/public/noducs1000.png"
                 src="https://wtemrwnjzqbbmgxpxrvf.supabase.co/storage/v1/object/public/cat_designs/public/noducst.png?t=2025-01-19T13%3A58%3A33.049Z"
                 alt="Noducs"
                 className="w-60 h-auto"
@@ -50,12 +41,16 @@ function App() {
                   <PiTrafficSign size={24} />
                   <p className="text-lg">noducs play</p>
                 </a>
-                {/* <a href="url" target="_blank" rel="noopener noreferrer">
-                  link text
+              </div>
+              <div className="flex space-x-4 justify-center mt-4">
+                <a
+                  className="text-white hover:text-white flex items-center space-x-3"
+                  href="https://medium.com/@asiripiyajanaka/noducs-no-ducks-just-state-a7d878370cdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p className="underline">Documentation</p>
                 </a>
-                <a href="url" target="_blank" rel="noopener noreferrer">
-                  link text
-                </a> */}
               </div>
             </div>
           </div>
