@@ -1,20 +1,30 @@
+import React, { Suspense } from "react";
 import "./App.css";
 import { FaGithub } from "react-icons/fa6";
 import { PiTrafficSign } from "react-icons/pi";
 
+const NoducsLogo = React.lazy(() => import("./base/ui/components/NoducsLogo"));
+
 function App() {
   return (
     <>
-      <div className="max-h-screen flex h-screen w-screen">
+      <div className="max-h-screen flex h-screen w-screen bg-black text-white">
         <div className="flex flex-col w-full">
           <div className="flex justify-between"></div>
           <div className="flex justify-center items-center h-full relative w-full bottom-20">
             <div className="flex justify-center flex-col items-center">
-              <img
+              {/* <img
                 src="https://wtemrwnjzqbbmgxpxrvf.supabase.co/storage/v1/object/public/cat_designs/public/noducst.png?t=2025-01-19T13%3A58%3A33.049Z"
                 alt="Noducs"
                 className="w-60 h-auto"
-              />
+              /> */}
+              <Suspense
+                fallback={
+                  <div className="w-60 h-40 bg-gray-800 animate-pulse rounded" />
+                }
+              >
+                <NoducsLogo />
+              </Suspense>
               <p className="text-xl font-semibold">
                 No Ducks, Just State - Simpler state management library
               </p>
